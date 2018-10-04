@@ -17,8 +17,8 @@
 node_modules
 .tmp
 npm-debug.log
-package-lock.json
-package-lock.*
+# package-lock.json
+# package-lock.*
 .waterline
 .node_history
 
