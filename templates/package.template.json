@@ -1,23 +1,33 @@
 {
-  "name": "sails-hook-before-orm",
+  "name": "<%= destDir %>",
   "version": "0.1.0",
-  "description": "Test Hook for sails-util-micro-apps loading before orm",
+  "description": "A Sails Micro App loaded using sails-util-micro-apps for a Sails micro-services architecture.",
   "main": "index.js",
   "author": "Emmanuel Mahuni",
+  "license": "MIT",
   "keywords": [
     "sails",
     "sails.js",
     "sails-hook",
-    "loader",
-    "mvc",
-    "hook"
+    "micro-app",
+    "micro-service",
+    "hook",
+    ""
   ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/<%= user %>/<%= destDir %>.git"
+  },
   "dependencies": {
+    "sails-util-micro-apps": "~1.0.0",
+    "lodash": "~4.17.1"
+  },
+  "devDependencies": {
     "sails": "~1.0.2",
-    "sails-util-micro-apps": "file:../..",
-    "sails-hook-before-hook-test": "this package.json will never be used for installation coz it's for sails to go thru and use installable hooks only"
+    "eslint": "3.19.0"
   },
   "sails": {
-    "isHook": true
+    "isHook": true,
+    "isMicroApp": true
   }
 }

@@ -3,7 +3,7 @@
  */
 
 module.exports = function (sails) {
-  var loader = require('../../../')(sails);
+  var loader = ('sails-util-micro-apps')(sails);
 
   // Load policies and config from default directories
   loader.configure();
@@ -22,14 +22,14 @@ module.exports = function (sails) {
   return {
     initialize: function (next) {
       // Load controllers, models & services from default directories
-      loader.adapt(function (err) {
+      loader.inject(function (err) {
         return next(err);
       });
 
       /*
         OR if you want to set custom path :
 
-        loader.adapt({
+        loader.inject({
           controllers: __dirname + '/api/controllers', // Path to your hook's controllers
           models: __dirname + '/api/models', // Path to your hook's models
           helpers: __dirname + '/api/helpers', // Path to your hook's helpers
