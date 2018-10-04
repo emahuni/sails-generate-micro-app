@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "description": "A Sails Micro App loaded using sails-util-micro-apps for a Sails micro-services architecture.",
   "main": "index.js",
-  "author": "Emmanuel Mahuni",
+  "author": "<%= author %>",
   "license": "MIT",
+  "year": "<%= year %>",
   "keywords": [
     "sails",
     "sails.js",
@@ -16,7 +17,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/<%= user %>/<%= destDir %>.git"
+    "url": "git://github.com/<%= author %>/<%= destDir %>.git"
   },
   "dependencies": {
     "sails-util-micro-apps": "~1.0.0",
