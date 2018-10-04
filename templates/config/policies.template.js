@@ -9,22 +9,22 @@
  */
 
 module.exports.policies = {
-				/***************************************************************************
-					*                                                                          *
-					* Default policy for all controllers and actions, unless overridden.       *
-					* (`true` allows public access)                                            *
-					*                                                                          *
-					***************************************************************************/
+  /***************************************************************************
+   *                                                                          *
+   * Default policy for all controllers and actions, unless overridden.       *
+   * (`true` allows public access)                                            *
+   *                                                                          *
+   ***************************************************************************/
 
-				// '*': true,
-				AppController:{
-								// test controller allowing
-								'appCtrlPolicyAllow': 'allowApp',
-								// test controller denying
-								'appCtrlPolicyDeny': 'denyApp',
-				},
+  // '*': true,
+  // AppController:{
+    // test controller allowing
+    // 'appCtrlPolicyAllow': 'allowApp',
+    // test controller denying
+    // 'appCtrlPolicyDeny': 'denyApp',
+  },
 
-				// standalone actions
-				'appaction/act-policy-allow': 'allowApp',
-				'appaction/act-policy-deny': 'denyApp',
+  // standalone actions
+  // 'appaction/act-policy-allow': 'allowApp',
+  // 'appaction/act-policy-deny': 'denyApp',
 };
