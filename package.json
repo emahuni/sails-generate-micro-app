@@ -1,0 +1,35 @@
+{
+  "name": "sails-generate-micro-app",
+  "version": "1.0.0",
+  "description": "sails generate micro-app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 'No further automated tests have been implemented for this generator yet.'",
+    "pretest": "npm run lint",
+    "lint": "node ./node_modules/eslint/bin/eslint . --max-warnings=0"
+  },
+  "keywords": [
+    "micro-app",
+    "generator",
+    "sails",
+    "generate",
+    "plugin"
+  ],
+  "author": "Emmanuel Mahuni",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.0"
+  },
+  "devDependencies": {
+    "eslint": "3.19.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/emahuni/sails-generate-micro-app.git"
+  },
+  "sailsGenerator": {
+    "type": "micro-app",
+    "behavior": "Implements or overrides `sails generate micro-app`",
+    "sailsVersion": "^1.0.0"
+  }
+}
