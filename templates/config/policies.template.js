@@ -22,7 +22,7 @@ module.exports.policies = {
     // 'appCtrlPolicyAllow': 'allowApp',
     // test controller denying
     // 'appCtrlPolicyDeny': 'denyApp',
-  },
+  // },
 
   // standalone actions
   // 'appaction/act-policy-allow': 'allowApp',
