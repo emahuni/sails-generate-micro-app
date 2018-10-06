@@ -1,10 +1,12 @@
+// make sure that we flag the environment as development
+process.env.NODE_ENV = 'test';
+
 const Sails = require('sails').Sails;
 
-global.chai = require('chai');
+const chai = require('chai');
 global.expect = chai.expect;
 
 global.chalk = require('chalk');
-global._ = require('lodash'); // expose our version of lodash 4
 
 const util = require('util');
 
@@ -15,15 +17,13 @@ const console = require('contrace')({
   methods: [ 'silly', 'verbose', 'info', 'debug', 'warn', 'error' ],
 });
 
-
 // Before running any tests, attempt to lift Sails
 before(function (done) {
   // Hook tests will timeout in 10 seconds, adjust for more
   this.timeout(10000);
 
-  // Attempt to lift sails
+  // Attempt to lift sails with a custom test environment configuration
   Sails().load({
-    port: 1300,
     log: {
       level: 'debug',
       // level: 'verbose',
@@ -31,15 +31,8 @@ before(function (done) {
       custom: console,
       inspect: false,
     },
-    hooks: {
-      // load the ORM
-      // "orm": require('sails-hook-orm'),
-    },
 
-    models: {
-      // set migrations to drop so that we get a fresh db each time
-      migrate: "drop",
-    },
+    // the rest of the configs go to config/env/test.js and do the default test envrionment config
 
   }, function (err, _sails) {
     if (err) return done(err);

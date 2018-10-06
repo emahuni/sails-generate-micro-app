@@ -87,6 +87,7 @@ module.exports = {
     './:destDir/config/views:ext': {template: './config/views.template.js'},
     // config/env
     './:destDir/config/env/production:ext': {template: './config/env/production.template.js'},
+    './:destDir/config/env/test:ext': {template: './config/env/test.template.js'},
     // config/locales
     './:destDir/config/locales/en.json': {template: './config/locales/en.template.json'},
     // tests
