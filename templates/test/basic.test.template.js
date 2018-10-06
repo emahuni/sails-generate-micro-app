@@ -5,7 +5,7 @@ const basicAtomics = require('./helpers/basic.atomics.js');
 describe('Sails-hook-micro-apps Hook tests #', function () {
 
   // Test that Sails can lift with the hook in place
-  it(`@${__line()} doesn\'t crash Sails`, async function () {
+  it('@' + __line() + 'doesn\'t crash Sails', async function () {
     return true;
   });
 
