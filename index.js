@@ -96,6 +96,15 @@ module.exports = {
     './:destDir/test/helpers/basic.atomics:ext': {template: './test/helpers/basic.atomics.template.js'},
     './:destDir/test/helpers/bootstrap:ext': {template: './test/helpers/bootstrap.template.js'},
 
+    // tools configurations
+    './:destDir/.editorconfig': {template: './.template.editorconfig'},
+    './:destDir/.eslintrc': {template: './.template.eslintrc'},
+    './:destDir/.gitignore': {template: './.template.gitignore'},
+    './:destDir/.jshintrc': {template: './.template.jshintrc'},
+    './:destDir/.npmignore': {template: './.template.npmignore'},
+    './:destDir/.travis.yml': {template: './.template.travis.yml'},
+    './:destDir/appveyor.yml': {template: './appveyor.template.yml'},
+
     // copy hook definition and main files
     './:destDir/index:ext': {template: './index.template.js'},
     './:destDir/package.json': {template: './package.template.json'},
