@@ -89,6 +89,11 @@ module.exports = {
     './:destDir/config/env/production:ext': {template: './config/env/production.template.js'},
     // config/locales
     './:destDir/config/locales/en.json': {template: './config/locales/en.template.json'},
+    // tests
+    './:destDir/test/basic.test:ext': {template: './templates/test/basic.test.template.js'},
+    './:destDir/test/mocha.opts': {template: './templates/test/mocha.template.opts'},
+    './:destDir/test/helpers/basic.atomics:ext': {template: './templates/test/helpers/basic.atomics.template.js'},
+    './:destDir/test/helpers/bootstrap:ext': {template: './templates/test/helpers/bootstrap.template.js'},
 
     // copy hook definition and main files
     './:destDir/index:ext': {template: './index.template.js'},
