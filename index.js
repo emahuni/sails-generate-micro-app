@@ -108,6 +108,7 @@ module.exports = {
     // copy hook definition and main files
     './:destDir/index:ext': {template: './index.template.js'},
     './:destDir/package.json': {template: './package.template.json'},
+    './:destDir/README.md': {template: './README.template.md'},
   },
 
 
