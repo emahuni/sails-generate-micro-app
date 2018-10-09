@@ -61,12 +61,12 @@ module.exports = {
     // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
     // create the Sails Dir structure placholders
-    './:destDir/api/controllers': { folder: {} },
-    './:destDir/api/helpers': { folder: {} },
-    './:destDir/api/hooks': { folder: {} },
-    './:destDir/api/models': { folder: {} },
-    './:destDir/api/policies': { folder: {} },
-    './:destDir/api/services': { folder: {} },
+    './:destDir/api/controllers/.gitkeep': { template: './.template.gitkeep' },
+    './:destDir/api/helpers/.gitkeep': { template: './.template.gitkeep' },
+    './:destDir/api/hooks/.gitkeep': { template: './.template.gitkeep' },
+    './:destDir/api/models/.gitkeep': { template: './.template.gitkeep' },
+    './:destDir/api/policies/.gitkeep': { template: './.template.gitkeep' },
+    './:destDir/api/services/.gitkeep': { template: './.template.gitkeep' },
 
     // copy all configuration templates defaults
     './:destDir/config/blueprints:ext': {template: './config/blueprints.template.js'},
