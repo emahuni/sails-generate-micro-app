@@ -24,7 +24,7 @@
     "lodash": "~4.17.1",
     "sails": "~1.0.2",
     "sails-hook-orm": "~2.1.0",
-    "contrace": "~0.6.0"
+    "contrace": "~0.7.1"
   },
   "devDependencies": {
     "chai": "~4.2.0",
